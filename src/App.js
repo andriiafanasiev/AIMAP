@@ -2,16 +2,19 @@ import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { LanguageProvider } from './context/LanguageContext';
+import { ThemeProvider } from './context/ThemeContext';
 import './App.css';
 
 function App() {
     return (
-        <LanguageProvider>
-            <div className="min-h-screen bg-black text-white">
-                <Navbar />
-                <Hero />
-            </div>
-        </LanguageProvider>
+        <ThemeProvider>
+            <LanguageProvider>
+                <div className="min-h-screen bg-gray-50 dark:bg-black text-gray-900 dark:text-white">
+                    <Navbar />
+                    <Hero />
+                </div>
+            </LanguageProvider>
+        </ThemeProvider>
     );
 }
 

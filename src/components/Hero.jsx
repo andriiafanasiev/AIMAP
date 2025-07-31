@@ -7,10 +7,10 @@ export const Hero = () => {
     const { t } = useLanguage();
 
     return (
-        <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+        <div className="h-screen w-full bg-gray-50 dark:bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className="w-full absolute inset-0 h-screen">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20" />
-                <div className="absolute inset-0 bg-black/50" />
+                <div className="absolute inset-0 bg-white/30 dark:bg-black/50" />
             </div>
 
             <div className="relative z-10 text-center px-4">
@@ -31,7 +31,7 @@ export const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
+                    className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 max-w-3xl mx-auto"
                 >
                     {t('hero.subtitle')}
                 </motion.p>
@@ -46,7 +46,7 @@ export const Hero = () => {
                         <Search className="h-5 w-5 mr-2" />
                         {t('hero.search')}
                     </button>
-                    <button className="px-8 py-4 bg-transparent border-2 border-gray-600 text-gray-300 font-semibold rounded-2xl hover:border-purple-500 hover:text-purple-400 transition-all duration-300 flex items-center">
+                    <button className="px-8 py-4 bg-transparent border-2 border-gray-400 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-2xl hover:border-purple-500 hover:text-purple-400 transition-all duration-300 flex items-center">
                         <Brain className="h-5 w-5 mr-2" />
                         {t('hero.explore')}
                     </button>
@@ -58,15 +58,15 @@ export const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.6 }}
                     className="mt-12 flex flex-wrap justify-center gap-8"
                 >
-                    <div className="flex items-center text-gray-400">
+                    <div className="flex items-center text-gray-600 dark:text-gray-400">
                         <Zap className="h-5 w-5 mr-2 text-yellow-400" />
                         <span>{t('hero.tools')}</span>
                     </div>
-                    <div className="flex items-center text-gray-400">
+                    <div className="flex items-center text-gray-600 dark:text-gray-400">
                         <Brain className="h-5 w-5 mr-2 text-blue-400" />
                         <span>{t('hero.aiTech')}</span>
                     </div>
-                    <div className="flex items-center text-gray-400">
+                    <div className="flex items-center text-gray-600 dark:text-gray-400">
                         <Search className="h-5 w-5 mr-2 text-purple-400" />
                         <span>{t('hero.fastSearch')}</span>
                     </div>

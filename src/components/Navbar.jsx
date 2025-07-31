@@ -2,20 +2,16 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Search, Moon, Sun } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isDark, setIsDark] = useState(true);
     const { t } = useLanguage();
-
-    const toggleTheme = () => {
-        setIsDark(!isDark);
-        document.documentElement.classList.toggle('dark');
-    };
+    const { isDark, toggleTheme } = useTheme();
 
     return (
-        <nav className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-md border-b border-gray-800">
+        <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/20 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <motion.div
@@ -32,29 +28,29 @@ export const Navbar = () => {
 
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
-                            <button className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
                                 {t('nav.home')}
                             </button>
-                            <button className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
                                 {t('nav.catalog')}
                             </button>
-                            <button className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
                                 {t('nav.categories')}
                             </button>
-                            <button className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
                                 {t('nav.about')}
                             </button>
                         </div>
                     </div>
 
                     <div className="hidden md:flex items-center space-x-4">
-                        <button className="p-2 text-gray-300 hover:text-white transition-colors">
+                        <button className="p-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors">
                             <Search className="h-5 w-5" />
                         </button>
                         <LanguageSwitcher />
                         <button
                             onClick={toggleTheme}
-                            className="p-2 text-gray-300 hover:text-white transition-colors"
+                            className="p-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
                         >
                             {isDark ? (
                                 <Sun className="h-5 w-5" />
@@ -70,7 +66,7 @@ export const Navbar = () => {
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-gray-300 hover:text-white p-2"
+                            className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white p-2"
                         >
                             {isOpen ? (
                                 <X className="h-6 w-6" />
@@ -87,29 +83,29 @@ export const Navbar = () => {
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
-                    className="md:hidden bg-black/95 backdrop-blur-md border-b border-gray-800"
+                    className="md:hidden bg-white/98 dark:bg-black/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-800"
                 >
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <button className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
+                        <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
                             {t('nav.home')}
                         </button>
-                        <button className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
+                        <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
                             {t('nav.catalog')}
                         </button>
-                        <button className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
+                        <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
                             {t('nav.categories')}
                         </button>
-                        <button className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
+                        <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
                             {t('nav.about')}
                         </button>
                         <div className="flex items-center space-x-4 px-3 py-2">
-                            <button className="p-2 text-gray-300 hover:text-white">
+                            <button className="p-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white">
                                 <Search className="h-5 w-5" />
                             </button>
                             <LanguageSwitcher />
                             <button
                                 onClick={toggleTheme}
-                                className="p-2 text-gray-300 hover:text-white"
+                                className="p-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
                             >
                                 {isDark ? (
                                     <Sun className="h-5 w-5" />
