@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Search, Moon, Sun } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isDark, setIsDark] = useState(true);
+    const { t } = useLanguage();
 
     const toggleTheme = () => {
         setIsDark(!isDark);
@@ -30,16 +33,16 @@ export const Navbar = () => {
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
                             <button className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                                Головна
+                                {t('nav.home')}
                             </button>
                             <button className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                                Каталог
+                                {t('nav.catalog')}
                             </button>
                             <button className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                                Категорії
+                                {t('nav.categories')}
                             </button>
                             <button className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                                Про нас
+                                {t('nav.about')}
                             </button>
                         </div>
                     </div>
@@ -48,6 +51,7 @@ export const Navbar = () => {
                         <button className="p-2 text-gray-300 hover:text-white transition-colors">
                             <Search className="h-5 w-5" />
                         </button>
+                        <LanguageSwitcher />
                         <button
                             onClick={toggleTheme}
                             className="p-2 text-gray-300 hover:text-white transition-colors"
@@ -59,7 +63,7 @@ export const Navbar = () => {
                             )}
                         </button>
                         <button className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-2xl hover:shadow-lg transition-all duration-300">
-                            Додати інструмент
+                            {t('nav.addTool')}
                         </button>
                     </div>
 
@@ -87,21 +91,22 @@ export const Navbar = () => {
                 >
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         <button className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
-                            Головна
+                            {t('nav.home')}
                         </button>
                         <button className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
-                            Каталог
+                            {t('nav.catalog')}
                         </button>
                         <button className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
-                            Категорії
+                            {t('nav.categories')}
                         </button>
                         <button className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
-                            Про нас
+                            {t('nav.about')}
                         </button>
                         <div className="flex items-center space-x-4 px-3 py-2">
                             <button className="p-2 text-gray-300 hover:text-white">
                                 <Search className="h-5 w-5" />
                             </button>
+                            <LanguageSwitcher />
                             <button
                                 onClick={toggleTheme}
                                 className="p-2 text-gray-300 hover:text-white"
@@ -114,7 +119,7 @@ export const Navbar = () => {
                             </button>
                         </div>
                         <button className="w-full mt-4 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-2xl">
-                            Додати інструмент
+                            {t('nav.addTool')}
                         </button>
                     </div>
                 </motion.div>

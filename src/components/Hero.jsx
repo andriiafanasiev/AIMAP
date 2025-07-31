@@ -1,8 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Zap, Brain, Search } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export const Hero = () => {
+    const { t } = useLanguage();
+
     return (
         <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className="w-full absolute inset-0 h-screen">
@@ -30,8 +33,7 @@ export const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
                 >
-                    Відкрийте світ штучного інтелекту з нашим каталогом 100+
-                    AI-інструментів
+                    {t('hero.subtitle')}
                 </motion.p>
 
                 <motion.div
@@ -42,11 +44,11 @@ export const Hero = () => {
                 >
                     <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-2xl hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 flex items-center">
                         <Search className="h-5 w-5 mr-2" />
-                        Почати пошук
+                        {t('hero.search')}
                     </button>
                     <button className="px-8 py-4 bg-transparent border-2 border-gray-600 text-gray-300 font-semibold rounded-2xl hover:border-purple-500 hover:text-purple-400 transition-all duration-300 flex items-center">
                         <Brain className="h-5 w-5 mr-2" />
-                        Дізнатися більше
+                        {t('hero.explore')}
                     </button>
                 </motion.div>
 
@@ -58,15 +60,15 @@ export const Hero = () => {
                 >
                     <div className="flex items-center text-gray-400">
                         <Zap className="h-5 w-5 mr-2 text-yellow-400" />
-                        <span>100+ інструментів</span>
+                        <span>{t('hero.tools')}</span>
                     </div>
                     <div className="flex items-center text-gray-400">
                         <Brain className="h-5 w-5 mr-2 text-blue-400" />
-                        <span>AI технології</span>
+                        <span>{t('hero.aiTech')}</span>
                     </div>
                     <div className="flex items-center text-gray-400">
                         <Search className="h-5 w-5 mr-2 text-purple-400" />
-                        <span>Швидкий пошук</span>
+                        <span>{t('hero.fastSearch')}</span>
                     </div>
                 </motion.div>
             </div>
