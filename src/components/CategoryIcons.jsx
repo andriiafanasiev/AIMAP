@@ -1,40 +1,42 @@
 import React from 'react';
-import { 
-  FileText, 
-  Image, 
-  Video, 
-  Music, 
-  MessageSquare, 
-  Code, 
-  Mic, 
-  Zap, 
-  TrendingUp, 
-  Search, 
-  Github, 
-  BookOpen, 
-  Gamepad2 
+import {
+    FileText,
+    Image,
+    Video,
+    Music,
+    MessageSquare,
+    Code,
+    Mic,
+    Zap,
+    TrendingUp,
+    Search,
+    Github,
+    BookOpen,
+    Gamepad2,
+    Cube
 } from 'lucide-react';
 
-const CategoryIcons = ({ category, className = "w-4 h-4" }) => {
-  const iconMap = {
-    'text': FileText,
-    'image': Image,
-    'video': Video,
-    'audio': Music,
-    'chatbot': MessageSquare,
-    'code': Code,
-    'voice': Mic,
-    'productivity': Zap,
-    'marketing': TrendingUp,
-    'research': Search,
-    'open-source': Github,
-    'education': BookOpen,
-    'fun': Gamepad2
-  };
+const CategoryIcons = ({ category, className = 'w-4 h-4' }) => {
+    const iconMap = {
+        text: FileText,
+        image: Image,
+        video: Video,
+        audio: Music,
+        chatbot: MessageSquare,
+        code: Code,
+        voice: Mic,
+        productivity: Zap,
+        marketing: TrendingUp,
+        research: Search,
+        'open-source': Github,
+        education: BookOpen,
+        fun: Gamepad2,
+        '3d': Cube
+    };
 
-  const IconComponent = iconMap[category] || FileText;
+    const IconComponent = iconMap[category] || FileText;
 
-  return <IconComponent className={className} />;
+    return <IconComponent className={className} />;
 };
 
-export default CategoryIcons; 
+export default CategoryIcons;

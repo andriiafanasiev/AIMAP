@@ -1,8 +1,11 @@
 import React from 'react';
 import { ExternalLink, Tag, Zap, Code, DollarSign, Info } from 'lucide-react';
 import CategoryIcons from './CategoryIcons';
+import { useLanguage } from '../context/LanguageContext';
 
 const ToolCard = ({ tool, onCardClick }) => {
+    const { t } = useLanguage();
+
     const handleCardClick = (e) => {
         e.preventDefault();
         if (onCardClick) {
@@ -39,13 +42,13 @@ const ToolCard = ({ tool, onCardClick }) => {
                             {tool.isFree && (
                                 <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">
                                     <DollarSign className="w-3 h-3 mr-1" />
-                                    Безкоштовно
+                                    {t('catalog.free')}
                                 </span>
                             )}
                             {tool.hasAPI && (
                                 <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">
                                     <Code className="w-3 h-3 mr-1" />
-                                    API
+                                    {t('catalog.api')}
                                 </span>
                             )}
                         </div>
@@ -55,13 +58,13 @@ const ToolCard = ({ tool, onCardClick }) => {
                     <button
                         onClick={handleExternalClick}
                         className="p-1 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-                        title="Відкрити сайт"
+                        title={t('catalog.openSite')}
                     >
                         <ExternalLink className="w-4 h-4" />
                     </button>
                     <div
                         className="p-1 text-gray-400 group-hover:text-purple-500 transition-colors"
-                        title="Детальніше"
+                        title={t('catalog.details')}
                     >
                         <Info className="w-4 h-4" />
                     </div>
@@ -78,8 +81,11 @@ const ToolCard = ({ tool, onCardClick }) => {
                         key={category}
                         className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200"
                     >
-                        <CategoryIcons category={category} className="w-3 h-3 mr-1" />
-                        {category}
+                        <CategoryIcons
+                            category={category}
+                            className="w-3 h-3 mr-1"
+                        />
+                        {t(`categories.${category}`)}
                     </span>
                 ))}
             </div>
