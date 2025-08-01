@@ -1,70 +1,197 @@
-# Getting Started with Create React App
+# 🤖 AI Tools Catalog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern artificial intelligence catalog featuring 20+ of the best AI tools for various tasks. Convenient search, filtering, and detailed information about each tool.
 
-## Available Scripts
+**⭐ If you liked the project, give it a star!**
 
-In the project directory, you can run:
+![AI Tools Catalog](https://img.shields.io/badge/AI-Tools%20Catalog-purple?style=for-the-badge&logo=robot)
+![React](https://img.shields.io/badge/React-18.2.0-blue?style=flat&logo=react)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat&logo=tailwind-css)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript)
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   **20+ AI Tools** - most popular and useful tools
+-   **Multilingual** - support for Ukrainian, English, and German
+-   **Convenient Search** - quick search by name, description, and tags
+-   **Filtering** - filter by categories and functions
+-   **Responsive Design** - works on all devices
+-   **Dark Mode** - dark theme support
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📱 Demo
 
-### `npm test`
+Run the project locally:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+npm start
+```
 
-### `npm run build`
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Technologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   **React 18** - main framework
+-   **Tailwind CSS** - styling
+-   **Lucide React** - icons
+-   **Framer Motion** - animations
+-   **React Context** - state management
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📋 AI Tools Catalog
 
-### `npm run eject`
+### 💬 Chatbots & Text
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Tool                                   | Description                                                              | Free | API |
+| -------------------------------------- | ------------------------------------------------------------------------ | ---- | --- |
+| **[ChatGPT](https://chat.openai.com)** | AI chatbot for text generation, answering questions and creative writing | ✅   | ✅  |
+| **[Claude](https://claude.ai)**        | AI assistant from Anthropic focused on safety and usefulness             | ✅   | ✅  |
+| **[Jasper](https://jasper.ai)**        | AI assistant for marketing and content creation                          | ❌   | ✅  |
+| **[Notion AI](https://notion.so)**     | AI assistant for content creation, editing and organization in Notion    | ❌   | ❌  |
+| **[Grammarly](https://grammarly.com)** | AI assistant for grammar checking and writing improvement                | ✅   | ❌  |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🎨 Image Generation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Tool                                      | Description                                                             | Free | API |
+| ----------------------------------------- | ----------------------------------------------------------------------- | ---- | --- |
+| **[Midjourney](https://midjourney.com)**  | High-quality AI image generator through Discord                         | ❌   | ❌  |
+| **[DALL-E](https://openai.com/dall-e-2)** | High-quality AI image generator from OpenAI                             | ❌   | ✅  |
+| **[Stability AI](https://stability.ai)**  | Creators of Stable Diffusion and other AI models for content generation | ✅   | ✅  |
+| **[Canva Magic](https://canva.com)**      | AI design tools in Canva: image, text and layout generation             | ✅   | ❌  |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🎬 Video & Audio
 
-## Learn More
+| Tool                                               | Description                                             | Free | API |
+| -------------------------------------------------- | ------------------------------------------------------- | ---- | --- |
+| **[Runway](https://runwayml.com)**                 | AI platform for creating video, images and 3D content   | ❌   | ✅  |
+| **[Synthesia](https://synthesia.io)**              | AI video generator with virtual hosts and avatars       | ❌   | ✅  |
+| **[ElevenLabs](https://elevenlabs.io)**            | AI voice generator with natural sound for audio content | ✅   | ✅  |
+| **[Whisper](https://openai.com/research/whisper)** | AI speech recognition system from OpenAI                | ✅   | ✅  |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 💻 Programming
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Tool                                                      | Description                                             | Free | API |
+| --------------------------------------------------------- | ------------------------------------------------------- | ---- | --- |
+| **[GitHub Copilot](https://github.com/features/copilot)** | AI programming assistant with code autocompletion       | ❌   | ✅  |
+| **[Cursor](https://cursor.sh)**                           | AI code editor with ChatGPT integration for programming | ✅   | ❌  |
 
-### Code Splitting
+### 🔬 Research & ML
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Tool                                       | Description                                               | Free | API |
+| ------------------------------------------ | --------------------------------------------------------- | ---- | --- |
+| **[Hugging Face](https://huggingface.co)** | Machine learning platform with models, datasets and tools | ✅   | ✅  |
+| **[Replicate](https://replicate.com)**     | Platform for running and deploying AI models              | ✅   | ✅  |
 
-### Analyzing the Bundle Size
+### 📚 Education
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Tool                                           | Description                                             | Free | API |
+| ---------------------------------------------- | ------------------------------------------------------- | ---- | --- |
+| **[Duolingo](https://duolingo.com)**           | AI personalized language learning with adaptive lessons | ✅   | ❌  |
+| **[Khan Academy AI](https://khanacademy.org)** | AI personalized learning of mathematics and sciences    | ✅   | ❌  |
 
-### Making a Progressive Web App
+### 📊 Productivity
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Tool                         | Description                                                   | Free | API |
+| ---------------------------- | ------------------------------------------------------------- | ---- | --- |
+| **[Tome](https://tome.app)** | AI presentation and document generator with natural interface | ✅   | ❌  |
 
-### Advanced Configuration
+## 🎯 Categories
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-   **💬 Text** - text generation and processing
+-   **🎨 Image** - image creation and editing
+-   **🎬 Video** - video generation and processing
+-   **🎵 Audio** - sound and voice work
+-   **🤖 Chatbot** - dialogue systems
+-   **💻 Code** - programming and development
+-   **🎤 Voice** - speech synthesis and recognition
+-   **⚡ Productivity** - organization and automation
+-   **📈 Marketing** - advertising and sales
+-   **🔬 Research** - scientific tools
+-   **🔓 Open Source** - open projects
+-   **📚 Education** - learning and education
+-   **🎮 Fun** - games and entertainment
+-   **🎪 3D** - three-dimensional graphics
 
-### Deployment
+## 🔍 Search Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+-   **Text Search** - search by name, description, categories and tags
+-   **Category Filtering** - select needed categories
+-   **Sorting** - by name, free/paid, with/without API
+-   **Statistics** - general information about the catalog
+-   **Popular Tools** - top 6 most popular
 
-### `npm run build` fails to minify
+## 🌐 Languages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   🇺🇦 **Ukrainian** - full support
+-   🇺🇸 **English** - full support
+-   🇩🇪 **German** - full support
+
+## 📁 Project Structure
+
+```
+aimap/
+├── public/
+│   ├── icons/ai-tools/     # AI tools icons
+│   └── index.html
+├── src/
+│   ├── components/         # React components
+│   ├── context/           # React Context
+│   ├── data/              # AI tools data
+│   ├── locales/           # Localization files
+│   └── lib/               # Utilities
+└── README.md
+```
+
+## 🚀 Quick Start
+
+1. **Clone the repository**
+
+    ```bash
+    git clone https://github.com/your-username/aimap.git
+    cd aimap
+    ```
+
+2. **Install dependencies**
+
+    ```bash
+    npm install
+    ```
+
+3. **Run the project**
+
+    ```bash
+    npm start
+    ```
+
+4. **Open browser**
+
+    ```
+    http://localhost:3000
+    ```
+
+## 📝 Adding New Tools
+
+1. Add data to `src/data/ai-tools.json`
+2. Add translations to `src/locales/`
+3. Add icon to `public/icons/ai-tools/`
+4. Make a commit with change description
+
+## 🤝 Contributing
+
+We welcome contributions! Please:
+
+1. Fork the project
+2. Create a branch for new feature
+3. Make changes
+4. Add tests
+5. Create Pull Request
+
+## 🔗 Useful Links
+
+-   [React Documentation](https://react.dev/)
+-   [Tailwind CSS](https://tailwindcss.com/)
+-   [Lucide Icons](https://lucide.dev/)
+-   [Framer Motion](https://www.framer.com/motion/)
+
+---
+
+**📧 Questions?** Create an Issue
