@@ -1,20 +1,21 @@
 import React from 'react';
 import { Filter } from 'lucide-react';
+import CategoryIcons from './CategoryIcons';
 
 const categories = [
-  { id: 'text', name: 'Текст', icon: '📝' },
-  { id: 'image', name: 'Зображення', icon: '🖼️' },
-  { id: 'video', name: 'Відео', icon: '🎥' },
-  { id: 'audio', name: 'Аудіо', icon: '🎵' },
-  { id: 'chatbot', name: 'Чатбот', icon: '🤖' },
-  { id: 'code', name: 'Код', icon: '💻' },
-  { id: 'voice', name: 'Голос', icon: '🎤' },
-  { id: 'productivity', name: 'Продуктивність', icon: '⚡' },
-  { id: 'marketing', name: 'Маркетинг', icon: '📈' },
-  { id: 'research', name: 'Дослідження', icon: '🔬' },
-  { id: 'open-source', name: 'Open Source', icon: '🔓' },
-  { id: 'education', name: 'Освіта', icon: '📚' },
-  { id: 'fun', name: 'Розваги', icon: '🎮' }
+  { id: 'text', name: 'Текст' },
+  { id: 'image', name: 'Зображення' },
+  { id: 'video', name: 'Відео' },
+  { id: 'audio', name: 'Аудіо' },
+  { id: 'chatbot', name: 'Чатбот' },
+  { id: 'code', name: 'Код' },
+  { id: 'voice', name: 'Голос' },
+  { id: 'productivity', name: 'Продуктивність' },
+  { id: 'marketing', name: 'Маркетинг' },
+  { id: 'research', name: 'Дослідження' },
+  { id: 'open-source', name: 'Open Source' },
+  { id: 'education', name: 'Освіта' },
+  { id: 'fun', name: 'Розваги' }
 ];
 
 const CategoryFilter = ({ selectedCategories, onCategoryChange }) => {
@@ -58,7 +59,7 @@ const CategoryFilter = ({ selectedCategories, onCategoryChange }) => {
                 : 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 border-2 border-transparent'
             }`}
           >
-            <span className="text-base">{category.icon}</span>
+            <CategoryIcons category={category.id} className="w-4 h-4" />
             <span>{category.name}</span>
           </button>
         ))}
@@ -75,4 +76,4 @@ const CategoryFilter = ({ selectedCategories, onCategoryChange }) => {
   );
 };
 
-export default CategoryFilter; 
+export default CategoryFilter;
