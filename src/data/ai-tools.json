@@ -1,0 +1,167 @@
+[
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "description": "Потужний чат-бот на базі GPT для генерації тексту, відповідей на питання та творчого письма",
+    "url": "https://chat.openai.com",
+    "categories": ["text", "chatbot"],
+    "tags": ["gpt", "openai", "conversation"],
+    "isFree": true,
+    "hasAPI": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "description": "AI-генератор зображень, що створює високоякісні арт-роботи з текстового опису",
+    "url": "https://midjourney.com",
+    "categories": ["image"],
+    "tags": ["art", "generation", "creative"],
+    "isFree": false,
+    "hasAPI": false,
+    "image": "https://cdn.discordapp.com/attachments/1008571069578403840/1042891887587909632/midjourney_logo.png"
+  },
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "description": "AI-асистент для програмування, що допомагає писати код, коментувати та тестувати",
+    "url": "https://github.com/features/copilot",
+    "categories": ["code"],
+    "tags": ["programming", "development", "github"],
+    "isFree": false,
+    "hasAPI": true,
+    "image": "https://github.githubassets.com/images/modules/copilot/cp-head-square.png"
+  },
+  {
+    "id": "notion-ai",
+    "name": "Notion AI",
+    "description": "AI-асистент для створення контенту, редагування та організації інформації в Notion",
+    "url": "https://notion.so",
+    "categories": ["productivity", "text"],
+    "tags": ["writing", "organization", "notes"],
+    "isFree": false,
+    "hasAPI": false,
+    "image": "https://www.notion.so/images/logo-ios.png"
+  },
+  {
+    "id": "runway",
+    "name": "Runway",
+    "description": "Платформа для створення AI-відео з тексту, зображень та анімації",
+    "url": "https://runwayml.com",
+    "categories": ["video", "image"],
+    "tags": ["video-generation", "animation", "creative"],
+    "isFree": false,
+    "hasAPI": true,
+    "image": "https://runwayml.com/static/images/logo.svg"
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "description": "AI-генератор голосу для створення природного звучання з тексту",
+    "url": "https://elevenlabs.io",
+    "categories": ["audio", "voice"],
+    "tags": ["voice-cloning", "text-to-speech", "podcast"],
+    "isFree": true,
+    "hasAPI": true,
+    "image": "https://elevenlabs.io/favicon.ico"
+  },
+  {
+    "id": "huggingface",
+    "name": "Hugging Face",
+    "description": "Платформа для машинного навчання з великою колекцією open-source моделей",
+    "url": "https://huggingface.co",
+    "categories": ["open-source", "research"],
+    "tags": ["machine-learning", "models", "community"],
+    "isFree": true,
+    "hasAPI": true,
+    "image": "https://huggingface.co/front/assets/huggingface_logo.svg"
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper",
+    "description": "AI-асистент для маркетингу та створення контенту для бізнесу",
+    "url": "https://jasper.ai",
+    "categories": ["marketing", "text"],
+    "tags": ["content-creation", "copywriting", "business"],
+    "isFree": false,
+    "hasAPI": true,
+    "image": "https://jasper.ai/favicon.ico"
+  },
+  {
+    "id": "duolingo-ai",
+    "name": "Duolingo AI",
+    "description": "AI-репетитор для вивчення мов з персоналізованими уроками",
+    "url": "https://duolingo.com",
+    "categories": ["education", "chatbot"],
+    "tags": ["language-learning", "tutoring", "personalized"],
+    "isFree": true,
+    "hasAPI": false,
+    "image": "https://d35aaqx5ub95lt.cloudfront.net/images/duo-spark.svg"
+  },
+  {
+    "id": "canva-magic",
+    "name": "Canva Magic",
+    "description": "AI-інструменти для дизайну: генерація зображень, текст та макетів",
+    "url": "https://canva.com",
+    "categories": ["image", "productivity"],
+    "tags": ["design", "graphics", "templates"],
+    "isFree": true,
+    "hasAPI": false,
+    "image": "https://static.canva.com/static/images/canva_logo.svg"
+  },
+  {
+    "id": "synthesia",
+    "name": "Synthesia",
+    "description": "Створення AI-відео з віртуальними ведучими та аватарами",
+    "url": "https://synthesia.io",
+    "categories": ["video", "voice"],
+    "tags": ["avatar", "presentation", "training"],
+    "isFree": false,
+    "hasAPI": true,
+    "image": "https://synthesia.io/favicon.ico"
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly",
+    "description": "AI-асистент для перевірки граматики, стилю та тону письма",
+    "url": "https://grammarly.com",
+    "categories": ["text", "productivity"],
+    "tags": ["grammar", "writing", "editing"],
+    "isFree": true,
+    "hasAPI": true,
+    "image": "https://static.grammarly.com/assets/files/grammarly_logo.svg"
+  },
+  {
+    "id": "replicate",
+    "name": "Replicate",
+    "description": "Платформа для запуску та розгортання AI-моделей в хмарі",
+    "url": "https://replicate.com",
+    "categories": ["open-source", "code"],
+    "tags": ["deployment", "cloud", "models"],
+    "isFree": true,
+    "hasAPI": true,
+    "image": "https://replicate.com/favicon.ico"
+  },
+  {
+    "id": "character-ai",
+    "name": "Character.AI",
+    "description": "Чат з AI-персонажами: знаменитості, історичні особи, вигадані герої",
+    "url": "https://character.ai",
+    "categories": ["chatbot", "fun"],
+    "tags": ["conversation", "entertainment", "personalities"],
+    "isFree": true,
+    "hasAPI": false,
+    "image": "https://character.ai/favicon.ico"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity AI",
+    "description": "AI-пошукова система з джерелами та детальними відповідями",
+    "url": "https://perplexity.ai",
+    "categories": ["research", "text"],
+    "tags": ["search", "information", "sources"],
+    "isFree": true,
+    "hasAPI": true,
+    "image": "https://perplexity.ai/favicon.ico"
+  }
+] 
