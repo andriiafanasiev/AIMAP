@@ -5,6 +5,7 @@ import SearchBar from './SearchBar';
 import SortSelect from './SortSelect';
 import Stats from './Stats';
 import ToolModal from './ToolModal';
+import FeaturedTools from './FeaturedTools';
 import { searchTools, filterToolsByCategories, sortTools } from '../lib/search';
 import aiToolsData from '../data/ai-tools.json';
 
@@ -43,9 +44,10 @@ const ToolsCatalog = () => {
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
           Каталог AI-інструментів
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300">
+        <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
           Знайдіть найкращі AI-інструменти для ваших потреб
         </p>
+        <FeaturedTools tools={tools} onToolClick={handleCardClick} />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
