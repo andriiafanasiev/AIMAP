@@ -15,6 +15,10 @@ const ToolModal = ({ tool, isOpen, onClose }) => {
 
     if (!isOpen || !tool) return null;
 
+    const handleImageError = (e) => {
+        e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(tool.name)}&background=6366f1&color=ffffff&size=64&font-size=0.5`;
+    };
+
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
             <div className="bg-white dark:bg-gray-800 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
@@ -24,11 +28,9 @@ const ToolModal = ({ tool, isOpen, onClose }) => {
                             <img
                                 src={tool.image}
                                 alt={tool.name}
-                                className="w-16 h-16 rounded-xl object-cover"
-                                onError={(e) => {
-                                    e.target.src =
-                                        'https://via.placeholder.com/64x64/6366f1/ffffff?text=AI';
-                                }}
+                                className="w-16 h-16 rounded-xl object-cover bg-gray-100 dark:bg-gray-700"
+                                onError={handleImageError}
+                                loading="lazy"
                             />
                             <div>
                                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white">

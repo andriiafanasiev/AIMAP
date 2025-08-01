@@ -6,6 +6,10 @@ const FeaturedTools = ({ tools, onToolClick }) => {
     const { t } = useLanguage();
     const featuredTools = tools.slice(0, 6);
 
+    const handleImageError = (e, toolName) => {
+        e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(toolName)}&background=6366f1&color=ffffff&size=40&font-size=0.35`;
+    };
+
     return (
         <div className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl p-6 border border-purple-200 dark:border-purple-800">
             <div className="flex items-center justify-between mb-6">
@@ -30,11 +34,9 @@ const FeaturedTools = ({ tools, onToolClick }) => {
                                 <img
                                     src={tool.image}
                                     alt={tool.name}
-                                    className="w-10 h-10 rounded-lg object-cover"
-                                    onError={(e) => {
-                                        e.target.src =
-                                            'https://via.placeholder.com/40x40/6366f1/ffffff?text=AI';
-                                    }}
+                                    className="w-10 h-10 rounded-lg object-cover bg-gray-100 dark:bg-gray-700"
+                                    onError={(e) => handleImageError(e, tool.name)}
+                                    loading="lazy"
                                 />
                                 <div className="absolute -top-1 -right-1 w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
                                     <span className="text-xs font-bold text-white">

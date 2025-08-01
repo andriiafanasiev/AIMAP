@@ -18,6 +18,10 @@ const ToolCard = ({ tool, onCardClick }) => {
         window.open(tool.url, '_blank', 'noopener,noreferrer');
     };
 
+    const handleImageError = (e) => {
+        e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(tool.name)}&background=6366f1&color=ffffff&size=48&font-size=0.4`;
+    };
+
     return (
         <div
             className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-200 dark:border-gray-700 group"
@@ -28,11 +32,9 @@ const ToolCard = ({ tool, onCardClick }) => {
                     <img
                         src={tool.image}
                         alt={tool.name}
-                        className="w-12 h-12 rounded-xl object-cover"
-                        onError={(e) => {
-                            e.target.src =
-                                'https://via.placeholder.com/48x48/6366f1/ffffff?text=AI';
-                        }}
+                        className="w-12 h-12 rounded-xl object-cover bg-gray-100 dark:bg-gray-700"
+                        onError={handleImageError}
+                        loading="lazy"
                     />
                     <div>
                         <h3 className="font-semibold text-lg text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">

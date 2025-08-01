@@ -19,7 +19,7 @@
         "tags": ["art", "generation", "discord"],
         "isFree": false,
         "hasAPI": false,
-        "image": "https://cdn.discordapp.com/attachments/1008571069578403840/1042897253679714304/midjourney_logo.png"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png"
     },
     {
         "id": "github-copilot",
@@ -30,7 +30,7 @@
         "tags": ["programming", "github", "development"],
         "isFree": false,
         "hasAPI": true,
-        "image": "https://github.githubassets.com/images/modules/copilot/cp-head-square.png"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
     },
     {
         "id": "notion-ai",
@@ -52,7 +52,7 @@
         "tags": ["creative", "video-editing", "generation"],
         "isFree": false,
         "hasAPI": true,
-        "image": "https://runwayml.com/static/images/logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Runway_ML_logo.png"
     },
     {
         "id": "huggingface",
@@ -63,7 +63,7 @@
         "tags": ["ml", "models", "datasets"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://huggingface.co/front/assets/huggingface_logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Hugging_Face_logo_with_text.svg"
     },
     {
         "id": "canva-magic",
@@ -74,7 +74,7 @@
         "tags": ["design", "canva", "graphics"],
         "isFree": true,
         "hasAPI": false,
-        "image": "https://static.canva.com/static/images/canva_logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg"
     },
     {
         "id": "elevenlabs",
@@ -85,7 +85,7 @@
         "tags": ["voice-cloning", "tts", "podcast"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://elevenlabs.io/static/images/logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/ElevenLabs_logo.png"
     },
     {
         "id": "jasper",
@@ -96,7 +96,7 @@
         "tags": ["copywriting", "marketing", "content"],
         "isFree": false,
         "hasAPI": true,
-        "image": "https://jasper.ai/static/images/logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Jasper_AI_logo.png"
     },
     {
         "id": "replicate",
@@ -107,7 +107,7 @@
         "tags": ["deployment", "models", "api"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://replicate.com/static/images/logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Replicate_logo.png"
     },
     {
         "id": "stability-ai",
@@ -118,7 +118,7 @@
         "tags": ["stable-diffusion", "generation", "art"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://stability.ai/static/images/logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Stability_AI_logo.png"
     },
     {
         "id": "anthropic-claude",
@@ -129,7 +129,7 @@
         "tags": ["anthropic", "conversation", "safety"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://claude.ai/static/images/logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Anthropic_logo.png"
     },
     {
         "id": "dall-e",
@@ -140,7 +140,7 @@
         "tags": ["openai", "art", "generation"],
         "isFree": false,
         "hasAPI": true,
-        "image": "https://openai.com/static/images/dall-e-logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg"
     },
     {
         "id": "whisper",
@@ -151,7 +151,7 @@
         "tags": ["speech-recognition", "transcription", "openai"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://openai.com/static/images/whisper-logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg"
     },
     {
         "id": "cursor",
@@ -162,7 +162,7 @@
         "tags": ["editor", "programming", "ai-assistant"],
         "isFree": true,
         "hasAPI": false,
-        "image": "https://cursor.sh/static/images/logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Cursor_editor_logo.png"
     },
     {
         "id": "synthesia",
@@ -173,7 +173,7 @@
         "tags": ["avatar", "presentation", "virtual-host"],
         "isFree": false,
         "hasAPI": true,
-        "image": "https://synthesia.io/static/images/logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Synthesia_logo.png"
     },
     {
         "id": "grammarly",
@@ -184,7 +184,7 @@
         "tags": ["grammar", "writing", "correction"],
         "isFree": true,
         "hasAPI": false,
-        "image": "https://grammarly.com/static/images/logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Grammarly_logo.svg"
     },
     {
         "id": "duolingo",
@@ -195,7 +195,7 @@
         "tags": ["language-learning", "adaptive", "gamification"],
         "isFree": true,
         "hasAPI": false,
-        "image": "https://duolingo.com/static/images/logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Duolingo_logo.svg"
     },
     {
         "id": "khan-academy",
@@ -206,7 +206,7 @@
         "tags": ["math", "science", "personalized-learning"],
         "isFree": true,
         "hasAPI": false,
-        "image": "https://khanacademy.org/static/images/logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Khan_Academy_logo.svg"
     },
     {
         "id": "tome",
@@ -217,6 +217,6 @@
         "tags": ["presentation", "document", "generation"],
         "isFree": true,
         "hasAPI": false,
-        "image": "https://tome.app/static/images/logo.svg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Tome_app_logo.png"
     }
 ]
