@@ -13,7 +13,7 @@ import {
     Github,
     BookOpen,
     Gamepad2,
-    Cube
+    Box
 } from 'lucide-react';
 
 const CategoryIcons = ({ category, className = 'w-4 h-4' }) => {
@@ -31,7 +31,7 @@ const CategoryIcons = ({ category, className = 'w-4 h-4' }) => {
         'open-source': Github,
         education: BookOpen,
         fun: Gamepad2,
-        '3d': Cube
+        '3d': Box
     };
 
     const IconComponent = iconMap[category] || FileText;
