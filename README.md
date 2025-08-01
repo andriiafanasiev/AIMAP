@@ -20,12 +20,9 @@ A modern artificial intelligence catalog featuring 20+ of the best AI tools for 
 
 ## 📱 Demo
 
-Run the project locally:
+View the demo online or run the project locally:
 
-```bash
-npm install
-npm start
-```
+[Online Demo](https://aimap-mocha.vercel.app/)
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
