@@ -4,6 +4,7 @@ import CategoryFilter from './CategoryFilter';
 import SearchBar from './SearchBar';
 import SortSelect from './SortSelect';
 import Stats from './Stats';
+import ToolModal from './ToolModal';
 import { searchTools, filterToolsByCategories, sortTools } from '../lib/search';
 import aiToolsData from '../data/ai-tools.json';
 
@@ -13,6 +14,8 @@ const ToolsCatalog = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [sortBy, setSortBy] = useState('name');
+  const [selectedTool, setSelectedTool] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     let result = tools;
@@ -23,6 +26,16 @@ const ToolsCatalog = () => {
 
     setFilteredTools(result);
   }, [tools, searchQuery, selectedCategories, sortBy]);
+
+  const handleCardClick = (tool) => {
+    setSelectedTool(tool);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedTool(null);
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -78,12 +91,18 @@ const ToolsCatalog = () => {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               {filteredTools.map((tool) => (
-                <ToolCard key={tool.id} tool={tool} />
+                <ToolCard key={tool.id} tool={tool} onCardClick={handleCardClick} />
               ))}
             </div>
           )}
         </div>
       </div>
+
+      <ToolModal 
+        tool={selectedTool} 
+        isOpen={isModalOpen} 
+        onClose={closeModal} 
+      />
     </div>
   );
 };
