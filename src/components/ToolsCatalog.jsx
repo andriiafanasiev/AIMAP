@@ -3,6 +3,7 @@ import ToolCard from './ToolCard';
 import CategoryFilter from './CategoryFilter';
 import SearchBar from './SearchBar';
 import SortSelect from './SortSelect';
+import Stats from './Stats';
 import { searchTools, filterToolsByCategories, sortTools } from '../lib/search';
 import aiToolsData from '../data/ai-tools.json';
 
@@ -36,6 +37,7 @@ const ToolsCatalog = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         <div className="lg:col-span-1 space-y-6">
+          <Stats tools={tools} />
           <CategoryFilter
             selectedCategories={selectedCategories}
             onCategoryChange={setSelectedCategories}
