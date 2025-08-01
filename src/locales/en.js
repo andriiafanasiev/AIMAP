@@ -40,19 +40,19 @@ export const en = {
             free: 'Free',
             api: 'With API',
             popularCategory: 'Popular Category',
-            distribution: 'Category Distribution:'
+            distribution: 'Category Distribution:',
         },
         featured: {
             title: 'Popular Tools',
-            description: 'These tools are most popular among users'
+            description: 'These tools are most popular among users',
         },
         sort: {
             nameAsc: 'By Name (A-Z)',
             nameDesc: 'By Name (Z-A)',
             freeFirst: 'Free First',
             paidFirst: 'Paid First',
-            apiFirst: 'With API First'
-        }
+            apiFirst: 'With API First',
+        },
     },
     categories: {
         text: 'Text',
@@ -68,6 +68,80 @@ export const en = {
         'open-source': 'Open Source',
         education: 'Education',
         fun: 'Fun',
-        '3d': '3D'
-    }
+        '3d': '3D',
+    },
+    tools: {
+        chatgpt: {
+            description:
+                'AI chatbot for text generation, answering questions and creative writing',
+        },
+        midjourney: {
+            description: 'High-quality AI image generator through Discord',
+        },
+        'github-copilot': {
+            description: 'AI programming assistant with code autocompletion',
+        },
+        'notion-ai': {
+            description:
+                'AI assistant for content creation, editing and organization in Notion',
+        },
+        runway: {
+            description:
+                'AI platform for creating video, images and 3D content',
+        },
+        huggingface: {
+            description:
+                'Machine learning platform with models, datasets and tools',
+        },
+        'canva-magic': {
+            description:
+                'AI design tools in Canva: image, text and layout generation',
+        },
+        elevenlabs: {
+            description:
+                'AI voice generator with natural sound for audio content',
+        },
+        jasper: {
+            description: 'AI assistant for marketing and content creation',
+        },
+        replicate: {
+            description: 'Platform for running and deploying AI models',
+        },
+        'stability-ai': {
+            description:
+                'Creators of Stable Diffusion and other AI models for content generation',
+        },
+        'anthropic-claude': {
+            description:
+                'AI assistant from Anthropic focused on safety and usefulness',
+        },
+        'dall-e': {
+            description: 'High-quality AI image generator from OpenAI',
+        },
+        whisper: {
+            description: 'AI speech recognition system from OpenAI',
+        },
+        cursor: {
+            description:
+                'AI code editor with ChatGPT integration for programming',
+        },
+        synthesia: {
+            description: 'AI video generator with virtual hosts and avatars',
+        },
+        grammarly: {
+            description:
+                'AI assistant for grammar checking and writing improvement',
+        },
+        duolingo: {
+            description:
+                'AI personalized language learning with adaptive lessons',
+        },
+        'khan-academy': {
+            description: 'AI personalized learning of mathematics and sciences',
+        },
+        tome: {
+            description:
+                'AI presentation and document generator with natural interface',
+        },
+    },
 };

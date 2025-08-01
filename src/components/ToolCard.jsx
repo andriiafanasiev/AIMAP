@@ -19,7 +19,24 @@ const ToolCard = ({ tool, onCardClick }) => {
     };
 
     const handleImageError = (e) => {
-        e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(tool.name)}&background=6366f1&color=ffffff&size=48&font-size=0.4`;
+        // Спочатку спробуємо локальну іконку
+        const localIconPath = `/icons/ai-tools/${tool.id}.svg`;
+        if (e.target.src !== localIconPath) {
+            e.target.src = localIconPath;
+        } else {
+            // Якщо локальна іконка не знайдена, використовуємо UI Avatars
+            e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(
+                tool.name
+            )}&background=6366f1&color=ffffff&size=48&font-size=0.4`;
+        }
+    };
+
+    const getToolDescription = () => {
+        try {
+            return t(`tools.${tool.id}.description`) || tool.description;
+        } catch {
+            return tool.description;
+        }
     };
 
     return (
@@ -74,7 +91,7 @@ const ToolCard = ({ tool, onCardClick }) => {
             </div>
 
             <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">
-                {tool.description}
+                {getToolDescription()}
             </p>
 
             <div className="flex flex-wrap gap-2 mb-4">

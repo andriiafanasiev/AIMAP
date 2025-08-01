@@ -16,7 +16,24 @@ const ToolModal = ({ tool, isOpen, onClose }) => {
     if (!isOpen || !tool) return null;
 
     const handleImageError = (e) => {
-        e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(tool.name)}&background=6366f1&color=ffffff&size=64&font-size=0.5`;
+        // Спочатку спробуємо локальну іконку
+        const localIconPath = `/icons/ai-tools/${tool.id}.svg`;
+        if (e.target.src !== localIconPath) {
+            e.target.src = localIconPath;
+        } else {
+            // Якщо локальна іконка не знайдена, використовуємо UI Avatars
+            e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(
+                tool.name
+            )}&background=6366f1&color=ffffff&size=64&font-size=0.5`;
+        }
+    };
+
+    const getToolDescription = () => {
+        try {
+            return t(`tools.${tool.id}.description`) || tool.description;
+        } catch {
+            return tool.description;
+        }
     };
 
     return (
@@ -66,7 +83,7 @@ const ToolModal = ({ tool, isOpen, onClose }) => {
                                 Опис
                             </h3>
                             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                {tool.description}
+                                {getToolDescription()}
                             </p>
                         </div>
 

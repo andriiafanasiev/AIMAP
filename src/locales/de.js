@@ -40,19 +40,19 @@ export const de = {
             free: 'Kostenlos',
             api: 'Mit API',
             popularCategory: 'Beliebte Kategorie',
-            distribution: 'Kategorieverteilung:'
+            distribution: 'Kategorieverteilung:',
         },
         featured: {
             title: 'Beliebte Tools',
-            description: 'Diese Tools sind bei Benutzern am beliebtesten'
+            description: 'Diese Tools sind bei Benutzern am beliebtesten',
         },
         sort: {
             nameAsc: 'Nach Name (A-Z)',
             nameDesc: 'Nach Name (Z-A)',
             freeFirst: 'Kostenlos zuerst',
             paidFirst: 'Bezahlt zuerst',
-            apiFirst: 'Mit API zuerst'
-        }
+            apiFirst: 'Mit API zuerst',
+        },
     },
     categories: {
         text: 'Text',
@@ -68,6 +68,83 @@ export const de = {
         'open-source': 'Open Source',
         education: 'Bildung',
         fun: 'Spaß',
-        '3d': '3D'
-    }
+        '3d': '3D',
+    },
+    tools: {
+        chatgpt: {
+            description:
+                'KI-Chatbot für Textgenerierung, Beantwortung von Fragen und kreatives Schreiben',
+        },
+        midjourney: {
+            description: 'Hochwertiger KI-Bildgenerator über Discord',
+        },
+        'github-copilot': {
+            description:
+                'KI-Programmierassistent mit Code-Autovervollständigung',
+        },
+        'notion-ai': {
+            description:
+                'KI-Assistent für Inhaltserstellung, Bearbeitung und Organisation in Notion',
+        },
+        runway: {
+            description:
+                'KI-Plattform für die Erstellung von Video, Bildern und 3D-Inhalten',
+        },
+        huggingface: {
+            description:
+                'Machine Learning Plattform mit Modellen, Datensätzen und Tools',
+        },
+        'canva-magic': {
+            description:
+                'KI-Designtools in Canva: Bild-, Text- und Layout-Generierung',
+        },
+        elevenlabs: {
+            description:
+                'KI-Stimmengenerator mit natürlichem Klang für Audioinhalte',
+        },
+        jasper: {
+            description: 'KI-Assistent für Marketing und Inhaltserstellung',
+        },
+        replicate: {
+            description:
+                'Plattform zum Ausführen und Bereitstellen von KI-Modellen',
+        },
+        'stability-ai': {
+            description:
+                'Schöpfer von Stable Diffusion und anderen KI-Modellen für Inhaltsgenerierung',
+        },
+        'anthropic-claude': {
+            description:
+                'KI-Assistent von Anthropic mit Fokus auf Sicherheit und Nützlichkeit',
+        },
+        'dall-e': {
+            description: 'Hochwertiger KI-Bildgenerator von OpenAI',
+        },
+        whisper: {
+            description: 'KI-Spracherkennungssystem von OpenAI',
+        },
+        cursor: {
+            description:
+                'KI-Code-Editor mit ChatGPT-Integration für die Programmierung',
+        },
+        synthesia: {
+            description: 'KI-Videogenerator mit virtuellen Hosts und Avataren',
+        },
+        grammarly: {
+            description:
+                'KI-Assistent für Grammatikprüfung und Schreibverbesserung',
+        },
+        duolingo: {
+            description:
+                'KI-personalisiertes Sprachenlernen mit adaptiven Lektionen',
+        },
+        'khan-academy': {
+            description:
+                'KI-personalisiertes Lernen von Mathematik und Naturwissenschaften',
+        },
+        tome: {
+            description:
+                'KI-Präsentations- und Dokumentengenerator mit natürlicher Benutzeroberfläche',
+        },
+    },
 };

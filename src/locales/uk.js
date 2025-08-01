@@ -40,19 +40,19 @@ export const uk = {
             free: 'Безкоштовних',
             api: 'З API',
             popularCategory: 'Популярна категорія',
-            distribution: 'Розподіл по категоріях:'
+            distribution: 'Розподіл по категоріях:',
         },
         featured: {
             title: 'Популярні інструменти',
-            description: 'Ці інструменти найбільш популярні серед користувачів'
+            description: 'Ці інструменти найбільш популярні серед користувачів',
         },
         sort: {
             nameAsc: 'За назвою (А-Я)',
             nameDesc: 'За назвою (Я-А)',
             freeFirst: 'Безкоштовні спочатку',
             paidFirst: 'Платні спочатку',
-            apiFirst: 'З API спочатку'
-        }
+            apiFirst: 'З API спочатку',
+        },
     },
     categories: {
         text: 'Текст',
@@ -68,6 +68,82 @@ export const uk = {
         'open-source': 'Open Source',
         education: 'Освіта',
         fun: 'Розваги',
-        '3d': '3D'
-    }
+        '3d': '3D',
+    },
+    tools: {
+        chatgpt: {
+            description:
+                'AI-чатбот для генерації тексту, відповідей на питання та творчого письма',
+        },
+        midjourney: {
+            description:
+                'AI-генератор зображень з високою якістю через Discord',
+        },
+        'github-copilot': {
+            description: 'AI-асистент для програмування з автодоповненням коду',
+        },
+        'notion-ai': {
+            description:
+                'AI-асистент для створення контенту, редагування та організації в Notion',
+        },
+        runway: {
+            description:
+                'AI-платформа для створення відео, зображень та 3D контенту',
+        },
+        huggingface: {
+            description:
+                'Платформа для машинного навчання з моделями, датасетами та інструментами',
+        },
+        'canva-magic': {
+            description:
+                'AI-інструменти для дизайну в Canva: генерація зображень, текстів та макетів',
+        },
+        elevenlabs: {
+            description:
+                'AI-генератор голосу з природним звучанням для аудіоконтенту',
+        },
+        jasper: {
+            description: 'AI-асистент для маркетингу та створення контенту',
+        },
+        replicate: {
+            description: 'Платформа для запуску та розгортання AI-моделей',
+        },
+        'stability-ai': {
+            description:
+                'Створювачі Stable Diffusion та інших AI-моделей для генерації контенту',
+        },
+        'anthropic-claude': {
+            description:
+                'AI-асистент від Anthropic з фокусом на безпеку та корисність',
+        },
+        'dall-e': {
+            description: 'AI-генератор зображень від OpenAI з високою якістю',
+        },
+        whisper: {
+            description: 'AI-система розпізнавання мови від OpenAI',
+        },
+        cursor: {
+            description:
+                'AI-редактор коду з інтеграцією ChatGPT для програмування',
+        },
+        synthesia: {
+            description:
+                'AI-генератор відео з віртуальними ведучими та аватарами',
+        },
+        grammarly: {
+            description:
+                'AI-асистент для перевірки граматики та покращення письма',
+        },
+        duolingo: {
+            description:
+                'AI-персоналізоване навчання мов з адаптивними уроками',
+        },
+        'khan-academy': {
+            description: 'AI-персоналізоване навчання математики та наук',
+        },
+        tome: {
+            description:
+                'AI-генератор презентацій та документів з природним інтерфейсом',
+        },
+    },
 };

@@ -8,7 +8,7 @@
         "tags": ["openai", "gpt", "conversation"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"
+        "image": "https://ui-avatars.com/api/?name=ChatGPT&background=10a37f&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "midjourney",
@@ -19,7 +19,7 @@
         "tags": ["art", "generation", "discord"],
         "isFree": false,
         "hasAPI": false,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png"
+        "image": "https://ui-avatars.com/api/?name=Midjourney&background=5865f2&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "github-copilot",
@@ -30,7 +30,7 @@
         "tags": ["programming", "github", "development"],
         "isFree": false,
         "hasAPI": true,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+        "image": "https://ui-avatars.com/api/?name=GitHub+Copilot&background=24292e&color=ffffff&size=48&font-size=0.35"
     },
     {
         "id": "notion-ai",
@@ -41,7 +41,7 @@
         "tags": ["notion", "writing", "organization"],
         "isFree": false,
         "hasAPI": false,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
+        "image": "https://ui-avatars.com/api/?name=Notion+AI&background=000000&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "runway",
@@ -52,7 +52,7 @@
         "tags": ["creative", "video-editing", "generation"],
         "isFree": false,
         "hasAPI": true,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Runway_ML_logo.png"
+        "image": "https://ui-avatars.com/api/?name=Runway&background=6366f1&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "huggingface",
@@ -63,7 +63,7 @@
         "tags": ["ml", "models", "datasets"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Hugging_Face_logo_with_text.svg"
+        "image": "https://ui-avatars.com/api/?name=Hugging+Face&background=ff6b6b&color=ffffff&size=48&font-size=0.35"
     },
     {
         "id": "canva-magic",
@@ -74,7 +74,7 @@
         "tags": ["design", "canva", "graphics"],
         "isFree": true,
         "hasAPI": false,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg"
+        "image": "https://ui-avatars.com/api/?name=Canva+Magic&background=00c4cc&color=ffffff&size=48&font-size=0.35"
     },
     {
         "id": "elevenlabs",
@@ -85,7 +85,7 @@
         "tags": ["voice-cloning", "tts", "podcast"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/ElevenLabs_logo.png"
+        "image": "https://ui-avatars.com/api/?name=ElevenLabs&background=8b5cf6&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "jasper",
@@ -96,7 +96,7 @@
         "tags": ["copywriting", "marketing", "content"],
         "isFree": false,
         "hasAPI": true,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Jasper_AI_logo.png"
+        "image": "https://ui-avatars.com/api/?name=Jasper&background=ff6b35&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "replicate",
@@ -107,7 +107,7 @@
         "tags": ["deployment", "models", "api"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Replicate_logo.png"
+        "image": "https://ui-avatars.com/api/?name=Replicate&background=3b82f6&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "stability-ai",
@@ -118,7 +118,7 @@
         "tags": ["stable-diffusion", "generation", "art"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Stability_AI_logo.png"
+        "image": "https://ui-avatars.com/api/?name=Stability+AI&background=10b981&color=ffffff&size=48&font-size=0.35"
     },
     {
         "id": "anthropic-claude",
@@ -129,7 +129,7 @@
         "tags": ["anthropic", "conversation", "safety"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Anthropic_logo.png"
+        "image": "https://ui-avatars.com/api/?name=Claude&background=ff6b6b&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "dall-e",
@@ -140,7 +140,7 @@
         "tags": ["openai", "art", "generation"],
         "isFree": false,
         "hasAPI": true,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg"
+        "image": "https://ui-avatars.com/api/?name=DALL-E&background=10a37f&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "whisper",
@@ -151,7 +151,7 @@
         "tags": ["speech-recognition", "transcription", "openai"],
         "isFree": true,
         "hasAPI": true,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg"
+        "image": "https://ui-avatars.com/api/?name=Whisper&background=10a37f&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "cursor",
@@ -162,7 +162,7 @@
         "tags": ["editor", "programming", "ai-assistant"],
         "isFree": true,
         "hasAPI": false,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Cursor_editor_logo.png"
+        "image": "https://ui-avatars.com/api/?name=Cursor&background=6366f1&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "synthesia",
@@ -173,7 +173,7 @@
         "tags": ["avatar", "presentation", "virtual-host"],
         "isFree": false,
         "hasAPI": true,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Synthesia_logo.png"
+        "image": "https://ui-avatars.com/api/?name=Synthesia&background=8b5cf6&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "grammarly",
@@ -184,7 +184,7 @@
         "tags": ["grammar", "writing", "correction"],
         "isFree": true,
         "hasAPI": false,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Grammarly_logo.svg"
+        "image": "https://ui-avatars.com/api/?name=Grammarly&background=15c39a&color=ffffff&size=48&font-size=0.4"
     },
     {
         "id": "duolingo",
@@ -195,7 +195,7 @@
         "tags": ["language-learning", "adaptive", "gamification"],
         "isFree": true,
         "hasAPI": false,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Duolingo_logo.svg"
+        "image": "https://ui-avatars.com/api/?name=Duolingo+AI&background=58cc02&color=ffffff&size=48&font-size=0.35"
     },
     {
         "id": "khan-academy",
@@ -206,7 +206,7 @@
         "tags": ["math", "science", "personalized-learning"],
         "isFree": true,
         "hasAPI": false,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Khan_Academy_logo.svg"
+        "image": "https://ui-avatars.com/api/?name=Khan+Academy+AI&background=1865f2&color=ffffff&size=48&font-size=0.3"
     },
     {
         "id": "tome",
@@ -217,6 +217,6 @@
         "tags": ["presentation", "document", "generation"],
         "isFree": true,
         "hasAPI": false,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Tome_app_logo.png"
+        "image": "https://ui-avatars.com/api/?name=Tome&background=000000&color=ffffff&size=48&font-size=0.4"
     }
 ]

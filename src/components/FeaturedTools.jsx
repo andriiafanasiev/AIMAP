@@ -6,8 +6,17 @@ const FeaturedTools = ({ tools, onToolClick }) => {
     const { t } = useLanguage();
     const featuredTools = tools.slice(0, 6);
 
-    const handleImageError = (e, toolName) => {
-        e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(toolName)}&background=6366f1&color=ffffff&size=40&font-size=0.35`;
+    const handleImageError = (e, tool) => {
+        // Спочатку спробуємо локальну іконку
+        const localIconPath = `/icons/ai-tools/${tool.id}.svg`;
+        if (e.target.src !== localIconPath) {
+            e.target.src = localIconPath;
+        } else {
+            // Якщо локальна іконка не знайдена, використовуємо UI Avatars
+            e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(
+                tool.name
+            )}&background=6366f1&color=ffffff&size=40&font-size=0.35`;
+        }
     };
 
     return (
@@ -35,7 +44,7 @@ const FeaturedTools = ({ tools, onToolClick }) => {
                                     src={tool.image}
                                     alt={tool.name}
                                     className="w-10 h-10 rounded-lg object-cover bg-gray-100 dark:bg-gray-700"
-                                    onError={(e) => handleImageError(e, tool.name)}
+                                    onError={(e) => handleImageError(e, tool)}
                                     loading="lazy"
                                 />
                                 <div className="absolute -top-1 -right-1 w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
