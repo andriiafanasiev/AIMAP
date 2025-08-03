@@ -34,6 +34,7 @@ export const de = {
         visitSite: 'Website besuchen',
         details: 'Details',
         openSite: 'Website öffnen',
+        reviews: 'Bewertungen',
         stats: {
             title: 'Katalog-Statistiken',
             total: 'Gesamte Tools',
@@ -46,6 +47,8 @@ export const de = {
             title: 'Beliebte Tools',
             description: 'Diese Tools sind bei Benutzern am beliebtesten',
         },
+        topRated: 'Top bewertete Tools',
+        topRatedDesc: 'Tools mit den höchsten Benutzerbewertungen',
         sort: {
             nameAsc: 'Nach Name (A-Z)',
             nameDesc: 'Nach Name (Z-A)',
@@ -53,6 +56,22 @@ export const de = {
             paidFirst: 'Bezahlt zuerst',
             apiFirst: 'Mit API zuerst',
         },
+    },
+    review: {
+        addReview: 'Bewertung hinzufügen',
+        rating: 'Bewertung',
+        comment: 'Kommentar',
+        commentPlaceholder: 'Teilen Sie Ihre Erfahrung mit diesem Tool...',
+        submit: 'Absenden',
+        reviews: 'Bewertungen',
+        noReviews: 'Noch keine Bewertungen'
+    },
+    common: {
+        cancel: 'Abbrechen',
+        save: 'Speichern',
+        delete: 'Löschen',
+        edit: 'Bearbeiten',
+        close: 'Schließen'
     },
     categories: {
         text: 'Text',

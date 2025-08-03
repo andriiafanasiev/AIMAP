@@ -34,6 +34,7 @@ export const uk = {
         visitSite: 'Відвідати сайт',
         details: 'Детальніше',
         openSite: 'Відкрити сайт',
+        reviews: 'відгуків',
         stats: {
             title: 'Статистика каталогу',
             total: 'Всього інструментів',
@@ -46,6 +47,8 @@ export const uk = {
             title: 'Популярні інструменти',
             description: 'Ці інструменти найбільш популярні серед користувачів',
         },
+        topRated: 'Топ-рейтингові інструменти',
+        topRatedDesc: 'Інструменти з найвищими рейтингами від користувачів',
         sort: {
             nameAsc: 'За назвою (А-Я)',
             nameDesc: 'За назвою (Я-А)',
@@ -53,6 +56,22 @@ export const uk = {
             paidFirst: 'Платні спочатку',
             apiFirst: 'З API спочатку',
         },
+    },
+    review: {
+        addReview: 'Додати відгук',
+        rating: 'Рейтинг',
+        comment: 'Коментар',
+        commentPlaceholder: 'Поділіться своїм досвідом використання цього інструменту...',
+        submit: 'Відправити',
+        reviews: 'Відгуки',
+        noReviews: 'Поки що немає відгуків'
+    },
+    common: {
+        cancel: 'Скасувати',
+        save: 'Зберегти',
+        delete: 'Видалити',
+        edit: 'Редагувати',
+        close: 'Закрити'
     },
     categories: {
         text: 'Текст',

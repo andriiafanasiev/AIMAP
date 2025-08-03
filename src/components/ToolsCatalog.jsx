@@ -6,6 +6,7 @@ import SortSelect from './SortSelect';
 import Stats from './Stats';
 import ToolModal from './ToolModal';
 import FeaturedTools from './FeaturedTools';
+import TopRatedTools from './TopRatedTools';
 import { searchTools, filterToolsByCategories, sortTools } from '../lib/search';
 import aiToolsData from '../data/ai-tools.json';
 import { useLanguage } from '../context/LanguageContext';
@@ -51,6 +52,8 @@ const ToolsCatalog = () => {
                 </p>
                 <FeaturedTools tools={tools} onToolClick={handleCardClick} />
             </div>
+            
+            <TopRatedTools />
 
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                 <div className="lg:col-span-1 space-y-6">

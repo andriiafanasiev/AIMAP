@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     X,
     ExternalLink,
@@ -7,11 +7,20 @@ import {
     Code,
     DollarSign,
     Star,
+    MessageSquare,
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import RatingStars from './RatingStars';
+import ReviewModal from './ReviewModal';
+import { getAverageRating, getReviewCount, getReviewsByToolId } from '../lib/reviews';
 
 const ToolModal = ({ tool, isOpen, onClose }) => {
     const { t } = useLanguage();
+    const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
+    
+    const averageRating = getAverageRating(tool?.id);
+    const reviewCount = getReviewCount(tool?.id);
+    const reviews = getReviewsByToolId(tool?.id);
 
     if (!isOpen || !tool) return null;
 
@@ -53,6 +62,14 @@ const ToolModal = ({ tool, isOpen, onClose }) => {
                                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
                                     {tool.name}
                                 </h2>
+                                {averageRating > 0 && (
+                                    <div className="flex items-center space-x-2 mt-2">
+                                        <RatingStars rating={averageRating} size={20} showNumber={true} />
+                                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                                            ({reviewCount} {t('catalog.reviews')})
+                                        </span>
+                                    </div>
+                                )}
                                 <div className="flex items-center space-x-2 mt-2">
                                     {tool.isFree && (
                                         <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">
@@ -121,11 +138,41 @@ const ToolModal = ({ tool, isOpen, onClose }) => {
                             </div>
                         </div>
 
+                        {reviews.length > 0 && (
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+                                    {t('review.reviews')}
+                                </h3>
+                                <div className="space-y-4 max-h-48 overflow-y-auto">
+                                    {reviews.slice(0, 3).map((review) => (
+                                        <div key={review.id} className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                                            <div className="flex items-center justify-between mb-2">
+                                                <RatingStars rating={review.rating} size={16} />
+                                                <span className="text-xs text-gray-500 dark:text-gray-400">
+                                                    {new Date(review.date).toLocaleDateString()}
+                                                </span>
+                                            </div>
+                                            <p className="text-sm text-gray-600 dark:text-gray-300">
+                                                {review.comment}
+                                            </p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+
                         <div className="flex items-center justify-between pt-6 border-t border-gray-200 dark:border-gray-700">
                             <div className="flex items-center space-x-4">
                                 <span className="text-sm text-gray-600 dark:text-gray-400">
                                     ID: {tool.id}
                                 </span>
+                                <button
+                                    onClick={() => setIsReviewModalOpen(true)}
+                                    className="inline-flex items-center px-3 py-1 text-sm text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
+                                >
+                                    <MessageSquare className="w-4 h-4 mr-1" />
+                                    {t('review.addReview')}
+                                </button>
                             </div>
                             <a
                                 href={tool.url}
@@ -140,6 +187,16 @@ const ToolModal = ({ tool, isOpen, onClose }) => {
                     </div>
                 </div>
             </div>
+            
+            <ReviewModal
+                isOpen={isReviewModalOpen}
+                onClose={() => setIsReviewModalOpen(false)}
+                tool={tool}
+                onSubmit={(review) => {
+                    console.log('Review submitted:', review);
+                    setIsReviewModalOpen(false);
+                }}
+            />
         </div>
     );
 };

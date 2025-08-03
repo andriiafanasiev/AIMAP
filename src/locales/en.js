@@ -34,6 +34,7 @@ export const en = {
         visitSite: 'Visit Site',
         details: 'Details',
         openSite: 'Open Site',
+        reviews: 'reviews',
         stats: {
             title: 'Catalog Statistics',
             total: 'Total Tools',
@@ -46,6 +47,8 @@ export const en = {
             title: 'Popular Tools',
             description: 'These tools are most popular among users',
         },
+        topRated: 'Top Rated Tools',
+        topRatedDesc: 'Tools with highest user ratings',
         sort: {
             nameAsc: 'By Name (A-Z)',
             nameDesc: 'By Name (Z-A)',
@@ -53,6 +56,22 @@ export const en = {
             paidFirst: 'Paid First',
             apiFirst: 'With API First',
         },
+    },
+    review: {
+        addReview: 'Add Review',
+        rating: 'Rating',
+        comment: 'Comment',
+        commentPlaceholder: 'Share your experience using this tool...',
+        submit: 'Submit',
+        reviews: 'Reviews',
+        noReviews: 'No reviews yet'
+    },
+    common: {
+        cancel: 'Cancel',
+        save: 'Save',
+        delete: 'Delete',
+        edit: 'Edit',
+        close: 'Close'
     },
     categories: {
         text: 'Text',

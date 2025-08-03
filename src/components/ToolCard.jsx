@@ -1,7 +1,9 @@
 import React from 'react';
-import { ExternalLink, Tag, Zap, Code, DollarSign, Info } from 'lucide-react';
+import { ExternalLink, Tag, Zap, Code, DollarSign, Info, Star } from 'lucide-react';
 import CategoryIcons from './CategoryIcons';
 import { useLanguage } from '../context/LanguageContext';
+import RatingStars from './RatingStars';
+import { getAverageRating, getReviewCount } from '../lib/reviews';
 
 const ToolCard = ({ tool, onCardClick }) => {
     const { t } = useLanguage();
@@ -38,6 +40,9 @@ const ToolCard = ({ tool, onCardClick }) => {
             return tool.description;
         }
     };
+
+    const averageRating = getAverageRating(tool.id);
+    const reviewCount = getReviewCount(tool.id);
 
     return (
         <div
@@ -93,6 +98,15 @@ const ToolCard = ({ tool, onCardClick }) => {
             <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">
                 {getToolDescription()}
             </p>
+
+            {averageRating > 0 && (
+                <div className="flex items-center justify-between mb-4">
+                    <RatingStars rating={averageRating} size={16} showNumber={true} />
+                    <span className="text-xs text-gray-500 dark:text-gray-400">
+                        {reviewCount} {t('catalog.reviews')}
+                    </span>
+                </div>
+            )}
 
             <div className="flex flex-wrap gap-2 mb-4">
                 {tool.categories.map((category) => (
