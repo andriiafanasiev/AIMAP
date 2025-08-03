@@ -70,6 +70,7 @@ export const en = {
         emptyDescription: 'Add tools to favorites to find them quickly later',
         exploreTools: 'Explore Tools',
         clearAll: 'Clear All',
+        tools: 'tools',
     },
     categories: {
         text: 'Text',

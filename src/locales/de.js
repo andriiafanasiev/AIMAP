@@ -71,6 +71,7 @@ export const de = {
             'Fügen Sie Tools zu Ihren Favoriten hinzu, um sie später schnell zu finden',
         exploreTools: 'Tools erkunden',
         clearAll: 'Alle löschen',
+        tools: 'Tools',
     },
     categories: {
         text: 'Text',

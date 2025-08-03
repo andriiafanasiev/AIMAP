@@ -6,7 +6,7 @@ import { useTheme } from '../context/ThemeContext';
 import { useFavorites } from '../context/FavoritesContext';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
-export const Navbar = () => {
+export const Navbar = ({ onFavoritesClick }) => {
     const [isOpen, setIsOpen] = useState(false);
     const { t } = useLanguage();
     const { isDark, toggleTheme } = useTheme();
@@ -30,17 +30,22 @@ export const Navbar = () => {
 
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
-                            <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <button 
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            >
                                 {t('nav.home')}
                             </button>
-                            <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <button 
+                                onClick={() => {
+                                    const catalogSection = document.querySelector('.search-section');
+                                    if (catalogSection) {
+                                        catalogSection.scrollIntoView({ behavior: 'smooth' });
+                                    }
+                                }}
+                                className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            >
                                 {t('nav.catalog')}
-                            </button>
-                            <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                                {t('nav.categories')}
-                            </button>
-                            <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                                {t('nav.about')}
                             </button>
                         </div>
                     </div>
@@ -58,10 +63,7 @@ export const Navbar = () => {
                             <Search className="h-5 w-5" />
                         </button>
                         <button 
-                            onClick={() => {
-                                // Тут можна додати логіку для відкриття сторінки улюблених
-                                console.log('Favorites clicked');
-                            }}
+                            onClick={onFavoritesClick}
                             className="relative p-2 text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 transition-colors"
                         >
                             <Heart className="h-5 w-5" />
@@ -82,7 +84,13 @@ export const Navbar = () => {
                                 <Moon className="h-5 w-5" />
                             )}
                         </button>
-                        <button className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <button 
+                            onClick={() => {
+                                // Тут можна додати логіку для додавання нового інструменту
+                                console.log('Add tool clicked');
+                            }}
+                            className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-2xl hover:shadow-lg transition-all duration-300"
+                        >
                             {t('nav.addTool')}
                         </button>
                     </div>
@@ -110,17 +118,26 @@ export const Navbar = () => {
                     className="md:hidden bg-white/98 dark:bg-black/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-800"
                 >
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
+                        <button 
+                            onClick={() => {
+                                setIsOpen(false);
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
+                            className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                        >
                             {t('nav.home')}
                         </button>
-                        <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
+                        <button 
+                            onClick={() => {
+                                setIsOpen(false);
+                                const catalogSection = document.querySelector('.search-section');
+                                if (catalogSection) {
+                                    catalogSection.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
+                            className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                        >
                             {t('nav.catalog')}
-                        </button>
-                        <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
-                            {t('nav.categories')}
-                        </button>
-                        <button className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left">
-                            {t('nav.about')}
                         </button>
                         <div className="flex items-center space-x-4 px-3 py-2">
                             <button className="p-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white">
