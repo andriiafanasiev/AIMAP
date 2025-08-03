@@ -34,7 +34,6 @@ export const en = {
         visitSite: 'Visit Site',
         details: 'Details',
         openSite: 'Open Site',
-        reviews: 'reviews',
         stats: {
             title: 'Catalog Statistics',
             total: 'Total Tools',
@@ -57,21 +56,12 @@ export const en = {
             apiFirst: 'With API First',
         },
     },
-    review: {
-        addReview: 'Add Review',
-        rating: 'Rating',
-        comment: 'Comment',
-        commentPlaceholder: 'Share your experience using this tool...',
-        submit: 'Submit',
-        reviews: 'Reviews',
-        noReviews: 'No reviews yet'
-    },
     common: {
         cancel: 'Cancel',
         save: 'Save',
         delete: 'Delete',
         edit: 'Edit',
-        close: 'Close'
+        close: 'Close',
     },
     favorites: {
         title: 'Favorite Tools',
@@ -79,7 +69,7 @@ export const en = {
         emptyTitle: 'No favorite tools',
         emptyDescription: 'Add tools to favorites to find them quickly later',
         exploreTools: 'Explore Tools',
-        clearAll: 'Clear All'
+        clearAll: 'Clear All',
     },
     categories: {
         text: 'Text',

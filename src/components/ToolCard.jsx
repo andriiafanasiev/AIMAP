@@ -1,10 +1,8 @@
 import React from 'react';
-import { ExternalLink, Tag, Zap, Code, DollarSign, Info, Star } from 'lucide-react';
+import { ExternalLink, Tag, Zap, Code, DollarSign, Info } from 'lucide-react';
 import CategoryIcons from './CategoryIcons';
 import { useLanguage } from '../context/LanguageContext';
-import RatingStars from './RatingStars';
 import FavoriteButton from './FavoriteButton';
-import { getAverageRating, getReviewCount } from '../lib/reviews';
 
 const ToolCard = ({ tool, onCardClick }) => {
     const { t } = useLanguage();
@@ -42,9 +40,6 @@ const ToolCard = ({ tool, onCardClick }) => {
         }
     };
 
-    const averageRating = getAverageRating(tool.id);
-    const reviewCount = getReviewCount(tool.id);
-
     return (
         <div
             className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-200 dark:border-gray-700 group"
@@ -79,8 +74,8 @@ const ToolCard = ({ tool, onCardClick }) => {
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center space-x-2">
-                    <FavoriteButton toolId={tool.id} size={16} />
+                <div className="flex items-center space-x-1">
+                    <FavoriteButton toolId={tool.id} size={14} className="p-1" />
                     <button
                         onClick={handleExternalClick}
                         className="p-1 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
@@ -100,15 +95,6 @@ const ToolCard = ({ tool, onCardClick }) => {
             <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">
                 {getToolDescription()}
             </p>
-
-            {averageRating > 0 && (
-                <div className="flex items-center justify-between mb-4">
-                    <RatingStars rating={averageRating} size={16} showNumber={true} />
-                    <span className="text-xs text-gray-500 dark:text-gray-400">
-                        {reviewCount} {t('catalog.reviews')}
-                    </span>
-                </div>
-            )}
 
             <div className="flex flex-wrap gap-2 mb-4">
                 {tool.categories.map((category) => (

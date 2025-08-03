@@ -34,7 +34,6 @@ export const de = {
         visitSite: 'Website besuchen',
         details: 'Details',
         openSite: 'Website öffnen',
-        reviews: 'Bewertungen',
         stats: {
             title: 'Katalog-Statistiken',
             total: 'Gesamte Tools',
@@ -57,29 +56,21 @@ export const de = {
             apiFirst: 'Mit API zuerst',
         },
     },
-    review: {
-        addReview: 'Bewertung hinzufügen',
-        rating: 'Bewertung',
-        comment: 'Kommentar',
-        commentPlaceholder: 'Teilen Sie Ihre Erfahrung mit diesem Tool...',
-        submit: 'Absenden',
-        reviews: 'Bewertungen',
-        noReviews: 'Noch keine Bewertungen'
-    },
     common: {
         cancel: 'Abbrechen',
         save: 'Speichern',
         delete: 'Löschen',
         edit: 'Bearbeiten',
-        close: 'Schließen'
+        close: 'Schließen',
     },
     favorites: {
         title: 'Lieblings-Tools',
         subtitle: 'Ihre gespeicherten KI-Tools',
         emptyTitle: 'Keine Lieblings-Tools',
-        emptyDescription: 'Fügen Sie Tools zu Ihren Favoriten hinzu, um sie später schnell zu finden',
+        emptyDescription:
+            'Fügen Sie Tools zu Ihren Favoriten hinzu, um sie später schnell zu finden',
         exploreTools: 'Tools erkunden',
-        clearAll: 'Alle löschen'
+        clearAll: 'Alle löschen',
     },
     categories: {
         text: 'Text',

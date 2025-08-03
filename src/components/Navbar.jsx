@@ -46,10 +46,24 @@ export const Navbar = () => {
                     </div>
 
                     <div className="hidden md:flex items-center space-x-4">
-                        <button className="p-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors">
+                        <button 
+                            onClick={() => {
+                                const searchSection = document.querySelector('.search-section');
+                                if (searchSection) {
+                                    searchSection.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
+                            className="p-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
+                        >
                             <Search className="h-5 w-5" />
                         </button>
-                        <button className="relative p-2 text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 transition-colors">
+                        <button 
+                            onClick={() => {
+                                // Тут можна додати логіку для відкриття сторінки улюблених
+                                console.log('Favorites clicked');
+                            }}
+                            className="relative p-2 text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 transition-colors"
+                        >
                             <Heart className="h-5 w-5" />
                             {getFavoritesCount() > 0 && (
                                 <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">

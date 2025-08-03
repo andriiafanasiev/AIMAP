@@ -34,7 +34,6 @@ export const uk = {
         visitSite: 'Відвідати сайт',
         details: 'Детальніше',
         openSite: 'Відкрити сайт',
-        reviews: 'відгуків',
         stats: {
             title: 'Статистика каталогу',
             total: 'Всього інструментів',
@@ -57,29 +56,21 @@ export const uk = {
             apiFirst: 'З API спочатку',
         },
     },
-    review: {
-        addReview: 'Додати відгук',
-        rating: 'Рейтинг',
-        comment: 'Коментар',
-        commentPlaceholder: 'Поділіться своїм досвідом використання цього інструменту...',
-        submit: 'Відправити',
-        reviews: 'Відгуки',
-        noReviews: 'Поки що немає відгуків'
-    },
     common: {
         cancel: 'Скасувати',
         save: 'Зберегти',
         delete: 'Видалити',
         edit: 'Редагувати',
-        close: 'Закрити'
+        close: 'Закрити',
     },
     favorites: {
         title: 'Улюблені інструменти',
         subtitle: 'Ваші збережені AI-інструменти',
         emptyTitle: 'Немає улюблених інструментів',
-        emptyDescription: 'Додайте інструменти до улюблених, щоб швидко знаходити їх пізніше',
+        emptyDescription:
+            'Додайте інструменти до улюблених, щоб швидко знаходити їх пізніше',
         exploreTools: 'Переглянути інструменти',
-        clearAll: 'Очистити всі'
+        clearAll: 'Очистити всі',
     },
     categories: {
         text: 'Текст',

@@ -6,6 +6,13 @@ import { useLanguage } from '../context/LanguageContext';
 export const Hero = () => {
     const { t } = useLanguage();
 
+    const scrollToSearch = () => {
+        const searchSection = document.querySelector('.search-section');
+        if (searchSection) {
+            searchSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div className="h-screen w-full bg-gray-50 dark:bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className="w-full absolute inset-0 h-screen">
@@ -42,7 +49,10 @@ export const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="flex flex-col sm:flex-row gap-4 justify-center items-center"
                 >
-                    <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-2xl hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 flex items-center">
+                    <button 
+                        onClick={scrollToSearch}
+                        className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-2xl hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 flex items-center"
+                    >
                         <Search className="h-5 w-5 mr-2" />
                         {t('hero.search')}
                     </button>
