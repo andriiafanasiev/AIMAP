@@ -73,6 +73,14 @@ export const de = {
         edit: 'Bearbeiten',
         close: 'Schließen'
     },
+    favorites: {
+        title: 'Lieblings-Tools',
+        subtitle: 'Ihre gespeicherten KI-Tools',
+        emptyTitle: 'Keine Lieblings-Tools',
+        emptyDescription: 'Fügen Sie Tools zu Ihren Favoriten hinzu, um sie später schnell zu finden',
+        exploreTools: 'Tools erkunden',
+        clearAll: 'Alle löschen'
+    },
     categories: {
         text: 'Text',
         image: 'Bild',

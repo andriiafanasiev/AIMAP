@@ -3,6 +3,7 @@ import { ExternalLink, Tag, Zap, Code, DollarSign, Info, Star } from 'lucide-rea
 import CategoryIcons from './CategoryIcons';
 import { useLanguage } from '../context/LanguageContext';
 import RatingStars from './RatingStars';
+import FavoriteButton from './FavoriteButton';
 import { getAverageRating, getReviewCount } from '../lib/reviews';
 
 const ToolCard = ({ tool, onCardClick }) => {
@@ -79,6 +80,7 @@ const ToolCard = ({ tool, onCardClick }) => {
                     </div>
                 </div>
                 <div className="flex items-center space-x-2">
+                    <FavoriteButton toolId={tool.id} size={16} />
                     <button
                         onClick={handleExternalClick}
                         className="p-1 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"

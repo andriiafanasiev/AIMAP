@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X, Search, Moon, Sun } from 'lucide-react';
+import { Menu, X, Search, Moon, Sun, Heart } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
+import { useFavorites } from '../context/FavoritesContext';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const { t } = useLanguage();
     const { isDark, toggleTheme } = useTheme();
+    const { getFavoritesCount } = useFavorites();
 
     return (
         <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/20 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
@@ -46,6 +48,14 @@ export const Navbar = () => {
                     <div className="hidden md:flex items-center space-x-4">
                         <button className="p-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors">
                             <Search className="h-5 w-5" />
+                        </button>
+                        <button className="relative p-2 text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 transition-colors">
+                            <Heart className="h-5 w-5" />
+                            {getFavoritesCount() > 0 && (
+                                <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                                    {getFavoritesCount()}
+                                </span>
+                            )}
                         </button>
                         <LanguageSwitcher />
                         <button

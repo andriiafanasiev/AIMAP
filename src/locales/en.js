@@ -73,6 +73,14 @@ export const en = {
         edit: 'Edit',
         close: 'Close'
     },
+    favorites: {
+        title: 'Favorite Tools',
+        subtitle: 'Your saved AI tools',
+        emptyTitle: 'No favorite tools',
+        emptyDescription: 'Add tools to favorites to find them quickly later',
+        exploreTools: 'Explore Tools',
+        clearAll: 'Clear All'
+    },
     categories: {
         text: 'Text',
         image: 'Image',
