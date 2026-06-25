@@ -44,6 +44,17 @@
         "image": "https://ui-avatars.com/api/?name=Notion+AI&background=000000&color=ffffff&size=48&font-size=0.4"
     },
     {
+        "id": "remio",
+        "name": "Remio",
+        "description": "Локальна AI-пам'ять і база знань для індексації файлів, вебсторінок, записів, листів, повідомлень, зображень і нотаток",
+        "url": "https://remio.ai",
+        "categories": ["productivity", "research", "text"],
+        "tags": ["knowledge-base", "local-first", "document-analysis"],
+        "isFree": true,
+        "hasAPI": false,
+        "image": "https://ui-avatars.com/api/?name=Remio&background=2563eb&color=ffffff&size=48&font-size=0.4"
+    },
+    {
         "id": "runway",
         "name": "Runway",
         "description": "AI-платформа для створення відео, зображень та 3D контенту",
