@@ -165,5 +165,9 @@ export const de = {
             description:
                 'KI-Präsentations- und Dokumentengenerator mit natürlicher Benutzeroberfläche',
         },
+        'agent-qa': {
+            description:
+                "Tests für Web-, Android- und iOS-Apps in natürlicher Sprache mit persistentem memidex-Speicher, validierter Selbstverbesserung, lokaler MCP-Schnittstelle und prüfbaren Ausführungsnachweisen. Modell- und optionale Gerätedienstkosten hängen von Konfiguration und Nutzung ab.",
+        },
     },
 };

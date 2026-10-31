@@ -161,5 +161,9 @@ export const en = {
             description:
                 'AI presentation and document generator with natural interface',
         },
+        'agent-qa': {
+            description:
+                "Natural-language web, Android and iOS testing with persistent memidex memory, validated self-improvement, a local MCP interface, and reviewable evidence. Model and optional device-service costs depend on configuration and usage.",
+        },
     },
 };

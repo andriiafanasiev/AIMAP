@@ -218,5 +218,24 @@
         "isFree": true,
         "hasAPI": false,
         "image": "https://ui-avatars.com/api/?name=Tome&background=000000&color=ffffff&size=48&font-size=0.4"
+    },
+    {
+        "id": "agent-qa",
+        "name": "agent-qa",
+        "description": "Тестування вебзастосунків, Android та iOS природною мовою з постійною пам’яттю memidex, перевіреним самовдосконаленням, локальним інтерфейсом MCP та доказами виконання для перевірки. Витрати на моделі й додаткові сервіси пристроїв залежать від конфігурації та використання.",
+        "url": "https://vostride.com",
+        "categories": [
+            "code"
+        ],
+        "tags": [
+            "testing",
+            "qa",
+            "mcp",
+            "memory",
+            "self-improvement"
+        ],
+        "isFree": false,
+        "hasAPI": true,
+        "image": "/icons/ai-tools/agent-qa.png"
     }
 ]
