@@ -68,6 +68,7 @@ View the demo online :
 | --------------------------------------------------------- | ------------------------------------------------------- | ---- | --- |
 | **[GitHub Copilot](https://github.com/features/copilot)** | AI programming assistant with code autocompletion       | ❌   | ✅  |
 | **[Cursor](https://cursor.sh)**                           | AI code editor with ChatGPT integration for programming | ✅   | ❌  |
+| **[agent-qa](https://vostride.com)** | Web/mobile testing with persistent memidex memory and validated self-improvement | Model costs vary | Local MCP |
 
 ### 🔬 Research & ML
 
